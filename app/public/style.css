@@ -1,0 +1,52 @@
+#main-content{
+	margin: 5px;
+}
+
+
+h1{
+	padding-bottom:  5px;
+	padding-top: 5px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+h3{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	font-weight: bold;
+
+}
+
+p{
+	font-size: 18px;
+	padding-bottom: 5px;
+
+}
+
+h4{
+	font-size: 18px;
+	padding-bottom: 9px;
+}
+
+.input-group{
+	/*padding-bottom: 10px;*/
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    /*color: #555;*/
+    /*background-color: #fff;*/
+       
+}
+
+#survey{
+	margin: 5px;
+}
+
+button{
+	padding-top: 5px;
+}

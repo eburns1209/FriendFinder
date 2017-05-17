@@ -1,0 +1,30 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "finding friends with similar interest",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "e. stowe",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eburns1209/FriendFinder.git"
+  },
+  "keywords": [
+    "questions",
+    "survey"
+  ],
+  "bugs": {
+    "url": "https://github.com/eburns1209/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/eburns1209/FriendFinder#readme"
+}
