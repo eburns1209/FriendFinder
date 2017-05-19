@@ -3,12 +3,13 @@ var friendList = require('../data/friends.js');
 var bodyParser = require('body-parser');
 var path = require ('path');
 
-//create routes
+
+
 module.exports = function (app){
 
 		app.get('/api/friends', function (req, res){
-		res.json(friends);
-		//res.json(friendList);
+		//res.json(friends);
+		res.json(friendList);
 		});
 
 		app.post('/api/friends', function (req, res){
@@ -17,26 +18,32 @@ module.exports = function (app){
 				name:"",
 				image: "",
 				matchDifference:1000
-				// 'name': 'none',
-				// 'photo': 'none'
+				
+		};
 
-			};
-
+				
 		var userTotal = sum(req.body.scores);
 
 		var friendTotal = 0;
 
 		var closest = 50;
 
-		for (var i = 0; i < friendList.length; i++){
+		for(var i=0; i < friendList.length; i++){
 			friendTotal = sum(friendList[i].scores);
 			var difference = Math.abs(friendTotal - userTotal);
-			if(difference <= closest){
+
+			if (difference <= closest){
 				closest = difference;
 				bestMatch.name = friendList[i].name;
 				bestMatch.photo = friendList[i].photo;
 			};
+			
 		};
+
+			bestMatch.name = friendList[0].name;
+			bestMatch.photo = friendList[0].photo;
+
+
 
 		function sum (array){
 			var total = 0;
@@ -49,7 +56,6 @@ module.exports = function (app){
 
 		console.log(bestMatch);
 		res.json(bestMatch);
-
 
 
 

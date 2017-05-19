@@ -1,14 +1,19 @@
 var friends = [
 		{
 				"name": "Bert",
-				"photo": "https://vignette1.wikia.nocookie.net/muppet/images/9/92/Bigbirdnewversion.png/revision/latest?cb=20120128201030",
+				"photo": "bert.jpg",
 				"scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 		},
 		{
 				"name": "Ernie",
-				"photo": "https://pbs.twimg.com/profile_images/700355030117937152/3uW9IKHD.png",
+				"photo": "ernie.jpg",
 				"scores": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
 	
+		}, 
+		{
+				"name": "Koala",
+				"photo": "Koala.jpg",
+				"scores": [5, 4, 3,2,1,1,2,3,4,5]
 		}
 
 ];
